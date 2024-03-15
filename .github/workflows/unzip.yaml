@@ -12,6 +12,18 @@ jobs:
       uses: actions/checkout@v2
     
     - name: Extract some files
-      run: unzip -qq './internalportal-report.zip' -d ./internalportal-report
+      run: |
+        rm -r uploads/extracted
+        filename=internalportal-report.zip
+        unzip *.zip
+        rm *.zip
+        mv $filename temp
+        mv temp/out/* .
+        rm -r temp
+        git config --local user.email "github-actions@users.noreply.github.com"
+        git config --local user.name "github-actions"
+        git add .
+        git commit -m "unzip"
+        git push origin main  
   
 
