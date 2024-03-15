@@ -16,6 +16,8 @@ jobs:
         filename=internalportal-report.zip
         unzip *.zip
         rm *.zip
+        git config --global user.email "dean.meden@gmail.com"
+        git config --global user.name "Dean Meden"
         git add .
         git commit -m "unzip"
         git push origin main  
