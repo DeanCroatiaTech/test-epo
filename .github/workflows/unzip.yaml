@@ -14,7 +14,8 @@ jobs:
     - name: Extract some files
       run: |
         filename=internalportal-report.zip
-        unzip *.zip
+        mkdir internalportal-report
+        unzip *.zip internalportal-report
         rm *.zip
         git config --global user.email "dean.meden@gmail.com"
         git config --global user.name "Dean Meden"
