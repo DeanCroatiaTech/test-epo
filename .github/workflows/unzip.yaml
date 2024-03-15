@@ -15,6 +15,7 @@ jobs:
       run: |
         filename=internalportal-report.zip
         mkdir internalportal-report
+        ls -l
         unzip *.zip internalportal-report
         rm *.zip
         git config --global user.email "dean.meden@gmail.com"
