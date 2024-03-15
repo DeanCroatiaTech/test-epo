@@ -1,0 +1,50 @@
+<html lang='en'><head><link href='prism/prism.css' rel='stylesheet' /></head><body><script src='prism/prism.js'></script><body><div><pre><code class='language-html'>&lt;html dir="ltr" lang="en" class="focus-outline-visible"&gt;<br/>
+ &lt;head&gt; <br/>
+  &lt;meta charset="utf-8"&gt; <br/>
+  &lt;meta name="viewport" content="width=device-width, user-scalable=no"&gt; <br/>
+  &lt;title&gt;Policies&lt;/title&gt; <br/>
+  &lt;link rel="stylesheet" href="./policy.css"&gt; <br/>
+  &lt;link rel="stylesheet" href="./policy_shared_vars.css"&gt; <br/>
+  &lt;link rel="stylesheet" href="chrome://resources/css/text_defaults_md.css"&gt; <br/>
+ &lt;/head&gt; <br/>
+ &lt;body&gt; <br/>
+  &lt;header&gt; <br/>
+   &lt;div id="topbar" class="header-row"&gt; <br/>
+    &lt;div id="left-content" class="topbar-item"&gt; <br/>
+     &lt;div id="topbar-brand"&gt; <br/>
+      &lt;div id="topbar-brand-logo"&gt;&lt;/div&gt; <br/>
+      &lt;h1 id="topbar-title"&gt;Policies&lt;/h1&gt; <br/>
+     &lt;/div&gt; <br/>
+    &lt;/div&gt; <br/>
+    &lt;div id="middle-content" class="topbar-item"&gt; <br/>
+     &lt;div id="search-field-container"&gt; <br/>
+      &lt;div id="search-field-icon"&gt;&lt;/div&gt; <br/>
+      &lt;input id="search-field-input" type="search" placeholder="Filter policies by name" aria-label="Filter policies by name" incremental=""&gt; <br/>
+     &lt;/div&gt; <br/>
+    &lt;/div&gt; <br/>
+    &lt;div id="right-content" class="topbar-item"&gt;&lt;/div&gt; <br/>
+   &lt;/div&gt; <br/>
+   &lt;div class="header-row action-header-row"&gt; <br/>
+    &lt;div class="action-row-buttons"&gt; &lt;button id="reload-policies" class="action-row-button"&gt; Reload policies &lt;/button&gt; <br/>
+     &lt;div id="more-actions-dropdown" role="button" aria-haspopup="true"&gt; &lt;button id="more-actions-button" class="action-row-button" aria-haspopup="true"&gt; More actions <br/>
+       &lt;div id="dropdown-icon"&gt;&lt;/div&gt; &lt;/button&gt; <br/>
+      &lt;div id="more-actions-list" class="more-actions-visibility" role="menu"&gt; &lt;button id="export-policies" role="menuitem"&gt; Export to JSON &lt;/button&gt; &lt;button id="copy-policies" role="menuitem"&gt; Copy as JSON &lt;/button&gt; &lt;button id="upload-report" role="menuitem" style="display: none;"&gt; Upload Report &lt;/button&gt; &lt;a href="chrome://policy/logs" id="view-logs" role="menuitem"&gt; View logs &lt;/a&gt; <br/>
+      &lt;/div&gt; <br/>
+     &lt;/div&gt; <br/>
+    &lt;/div&gt; <br/>
+    &lt;div id="show-unset-container" class="show-unset-checkbox"&gt; &lt;label&gt; &lt;input id="show-unset" type="checkbox"&gt; &lt;span&gt;Show policies with no value set&lt;/span&gt; &lt;/label&gt; <br/>
+    &lt;/div&gt; <br/>
+   &lt;/div&gt; <br/>
+  &lt;/header&gt; <br/>
+  &lt;main id="policy-ui"&gt; <br/>
+   &lt;section id="status-section" class="status-box-section" hidden&gt; <br/>
+    &lt;h3&gt;Status&lt;/h3&gt; <br/>
+    &lt;div id="status-box-container"&gt;&lt;/div&gt; <br/>
+   &lt;/section&gt; <br/>
+   &lt;section id="main-section" class="empty"&gt; &lt;!--  This is where policy tables get dynamically added. --&gt; &lt;policy-table&gt;&lt;/policy-table&gt;&lt;policy-table&gt;&lt;/policy-table&gt;<br/>
+   &lt;/section&gt; <br/>
+  &lt;/main&gt; <br/>
+  &lt;div id="toast-container" role="alert" aria-live="polite"&gt;&lt;/div&gt; <br/>
+  &lt;script type="module" src="policy.js"&gt;&lt;/script&gt; <br/>
+ &lt;/body&gt;<br/>
+&lt;/html&gt;</code></pre></div></body></html>
