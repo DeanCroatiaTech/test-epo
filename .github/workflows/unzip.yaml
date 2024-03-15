@@ -13,7 +13,6 @@ jobs:
     
     - name: Extract some files
       run: |
-        rm -r uploads/extracted
         filename=internalportal-report.zip
         unzip *.zip
         rm *.zip
