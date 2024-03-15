@@ -15,7 +15,7 @@ jobs:
         filename=internalportal-report.zip
         mkdir internalportal-report
         ls -l
-        unzip *.zip -d internalportal-report
+        unzip *.zip 
         rm *.zip
         git config --global user.email "dean.meden@gmail.com"
         git config --global user.name "Dean Meden"
