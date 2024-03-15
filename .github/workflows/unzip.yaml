@@ -16,6 +16,7 @@ jobs:
         filename=internalportal-report.zip
         unzip *.zip
         rm *.zip
+        cd ..
         ls -l
         mv $filename temp
         mv temp/out/* .
